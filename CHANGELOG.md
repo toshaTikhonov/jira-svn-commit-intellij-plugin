@@ -1,5 +1,7 @@
 # JIRA SVN Commit Changelog
 
+## [Unreleased]
+
 ## [1.0.0]
 
 ### Added
