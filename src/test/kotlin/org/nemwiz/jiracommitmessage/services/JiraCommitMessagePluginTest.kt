@@ -35,7 +35,7 @@ class JiraCommitMessagePluginTest : BasePlatformTestCase() {
 
         val plugin = project.service<JiraCommitMessagePlugin>()
 
-        assertEquals("#FAREPLUS-4018:  ", plugin.getCommitMessage())
+        assertEquals("#FAREPLUS-4018 : ", plugin.getCommitMessage())
     }
 
     fun testCanExtractIssueFromText() {
