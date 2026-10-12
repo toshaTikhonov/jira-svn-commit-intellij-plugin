@@ -105,16 +105,6 @@ class SvnClient(private val workingCopyPath: String? = null) {
         // opens the inline diff for a modified file, so changed files link there.
         fun visualPathUrl(): String = visualRevisionUrl()
 
-        fun jiraIssueLink(message: String): String {
-            val issue = Regex("[A-Z][A-Z0-9]+-\\d+").find(message)?.value ?: return message
-            val jiraBase = state.jiraBaseUrl.trimEnd('/')
-            if (jiraBase.isBlank()) return message
-            return message.replaceFirst(
-                issue,
-                "[" + issue + "|" + jiraBase + "/browse/" + issue + "]"
-            )
-        }
-
         val revisionUrl = visualRevisionUrl()
         val lines = mutableListOf<String>()
         lines += if (revisionUrl.isBlank()) {
@@ -125,7 +115,7 @@ class SvnClient(private val workingCopyPath: String? = null) {
         lines += "Репозиторий: " + repositoryName
         if (revision.author.isNotBlank()) lines += "Автор: " + revision.author
         lines += ""
-        lines += jiraIssueLink(revision.message.ifBlank { "(без комментария)" })
+        lines += revision.message.trim().ifBlank { "(без комментария)" }
         lines += ""
         lines += "Изменено файлов: " + revision.paths.size
         revision.paths.take(30).forEach { (action, path) ->
