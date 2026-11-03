@@ -1,0 +1,43 @@
+name: Synology Linux build
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: synology-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: [self-hosted, Linux, X64, synology]
+    timeout-minutes: 90
+    container:
+      image: ubuntu:24.04
+      options: --cpus 1 --memory 2g
+    defaults:
+      run:
+        shell: bash
+    env:
+      DEBIAN_FRONTEND: noninteractive
+      CMAKE_BUILD_PARALLEL_LEVEL: "1"
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - name: Install prerequisites
+        run: apt-get update && apt-get install -y git ca-certificates curl unzip zip tar gzip
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Build plugin and run unit tests
+        run: bash ./gradlew --no-daemon --max-workers=1 -Dorg.gradle.jvmargs="-Xmx1024m -XX:MaxMetaspaceSize=384m -Dfile.encoding=UTF-8" -Pkotlin.compiler.execution.strategy=in-process test buildPlugin -x buildSearchableOptions
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jira-svn-commit-intellij-plugin-plugin
+          path: build/distributions/*.zip
+          if-no-files-found: error
+          retention-days: 3
