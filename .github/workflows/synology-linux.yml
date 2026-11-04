@@ -1,6 +1,9 @@
 name: Synology Linux build
 on:
   workflow_dispatch:
+  push:
+    branches: [ci/synology-runners]
+    paths: ['.github/workflows/synology-linux.yml']
 permissions:
   contents: read
 concurrency:
