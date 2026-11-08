@@ -19,7 +19,7 @@ version = providers.gradleProperty("pluginVersion").get()
 
 // Set the JVM language level used to build the project. Use Java 11 for 2020.3+, and Java 17 for 2022.2+.
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(25)
 }
 
 // Configure project's dependencies
@@ -112,7 +112,7 @@ intellijPlatform {
 
     pluginVerification {
         ides {
-            ide("IC", "2023.3.7")
+            ide("CL", "2026.3")
         }
     }
 }
