@@ -152,13 +152,6 @@ jobs:
       pull-requests: write
     steps:
 
-      # Free GitHub Actions Environment Disk Space
-      - name: Maximize Build Space
-        uses: jlumbroso/free-disk-space@main
-        with:
-          tool-cache: false
-          large-packages: false
-
       # Check out the current repository
       - name: Fetch Sources
         uses: actions/checkout@v4
@@ -182,13 +175,6 @@ jobs:
     needs: [ build ]
     runs-on: [self-hosted, Linux, X64, synology]
     steps:
-
-      # Free GitHub Actions Environment Disk Space
-      - name: Maximize Build Space
-        uses: jlumbroso/free-disk-space@main
-        with:
-          tool-cache: false
-          large-packages: false
 
       # Check out the current repository
       - name: Fetch Sources
@@ -230,7 +216,7 @@ jobs:
   # If accepted and published, release workflow would be triggered
   releaseDraft:
     name: Release draft
-    if: github.event_name != 'pull_request'
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
     needs: [ build, test, inspectCode, verify ]
     runs-on: [self-hosted, Linux, X64, synology]
     permissions:
