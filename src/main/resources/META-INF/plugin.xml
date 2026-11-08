@@ -4,6 +4,7 @@
     <vendor>toshaTikhonov</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.vcs</depends>
     <depends>Subversion</depends>
 
     <extensions defaultExtensionNs="com.intellij">
