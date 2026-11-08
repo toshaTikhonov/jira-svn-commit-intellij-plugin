@@ -9,7 +9,7 @@ loggingInterceptor = "4.12.0"
 
 
 # plugins
-kotlin = "2.2.21"
+kotlin = "2.3.21"
 changelog = "2.2.1"
 intelliJPlatform = "2.20.0"
 qodana = "2024.1.9"
