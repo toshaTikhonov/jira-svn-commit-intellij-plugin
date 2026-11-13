@@ -61,6 +61,9 @@ dependencies {
 
 // Configure IntelliJ Platform Gradle Plugin - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-extension.html
 intellijPlatform {
+    // CLion indexing starts the Radler backend; disable the entire searchable-options pipeline.
+    buildSearchableOptions = false
+
     // The plugin has no Swing UI Designer forms and does not need bytecode instrumentation.
     instrumentCode = false
 
@@ -139,11 +142,6 @@ kover {
 }
 
 tasks {
-    // CLion's traverseUI starts the Radler backend and can stall a headless build.
-    buildSearchableOptions {
-        enabled = false
-    }
-
     withType<Test>().configureEach {
         // Kover 0.8.3 writes its agent arguments before Gradle creates this directory.
         doFirst {
