@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.diogen:diogen-analysis:1.0.0" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.diogen/diogen-analysis/1.0.0/81a4170c96c49a369566592a822aa29cc2c1a2b7/diogen-analysis-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.diogen/diogen-analysis/1.0.0/3d15cb8537f50e956b6bb1ec979897cdee13038e/diogen-analysis-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

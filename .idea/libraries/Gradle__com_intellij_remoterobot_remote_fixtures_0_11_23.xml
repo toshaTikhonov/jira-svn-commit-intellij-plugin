@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.intellij.remoterobot:remote-fixtures:0.11.23" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.intellij.remoterobot/remote-fixtures/0.11.23/c0869e428ed9d6f09dfb4a654944dd7ced841622/remote-fixtures-0.11.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.intellij.remoterobot/remote-fixtures/0.11.23/1e9b3fb6b8884c224456ec057f67738b4e5876a0/remote-fixtures-0.11.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

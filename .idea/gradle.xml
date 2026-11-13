@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
           </set>
         </option>
+        <option name="myGradleHome" value="/usr/local/Cellar/gradle/9.8.1/libexec" />
       </GradleProjectSettings>
     </option>
   </component>

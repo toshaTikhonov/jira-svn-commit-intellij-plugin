@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.oshi:oshi-core-ffm:7.6.1" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core-ffm/7.6.1/fa5df308bc224d68003ed25a943f4f442fea71e1/oshi-core-ffm-7.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core-ffm/7.6.1/33a193c99bc8e3820d49155acc3920a71a3908f9/oshi-core-ffm-7.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

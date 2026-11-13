@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.errorprone:error_prone_annotations:2.50.0" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.50.0/74ba43e49ab1184d41634af2ef0047e82c4064b0/error_prone_annotations-2.50.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.50.0/af21e9b138b01efccae9fd17fb9ed5930bf63d1f/error_prone_annotations-2.50.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

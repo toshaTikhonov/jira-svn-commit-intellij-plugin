@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: tools.jackson.module:jackson-module-kotlin:3.2.2" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.module/jackson-module-kotlin/3.2.2/b55050239de97c0f49a509882d395522b458fb83/jackson-module-kotlin-3.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.module/jackson-module-kotlin/3.2.2/1f074a013e06c46d260579165360351ce540dcd4/jackson-module-kotlin-3.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

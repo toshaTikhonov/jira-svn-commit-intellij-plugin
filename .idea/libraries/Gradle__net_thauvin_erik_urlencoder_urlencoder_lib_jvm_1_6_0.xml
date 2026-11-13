@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.thauvin.erik.urlencoder:urlencoder-lib-jvm:1.6.0" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.thauvin.erik.urlencoder/urlencoder-lib-jvm/1.6.0/6b922dd3ff960b08873c10395545e08355e250c9/urlencoder-lib-jvm-1.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.thauvin.erik.urlencoder/urlencoder-lib-jvm/1.6.0/2a5c531e4b4afef02d124c081c41024852eefc4/urlencoder-lib-jvm-1.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.intellij.remoterobot:remote-robot:0.11.23" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.intellij.remoterobot/remote-robot/0.11.23/868abe8f05eb033abea8937f0a8afa80f9de3d78/remote-robot-0.11.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.intellij.remoterobot/remote-robot/0.11.23/bd37a63be17b716432e150e48519525c854faaed/remote-robot-0.11.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -139,6 +139,18 @@ kover {
 }
 
 tasks {
+    // CLion's traverseUI starts the Radler backend and can stall a headless build.
+    buildSearchableOptions {
+        enabled = false
+    }
+
+    withType<Test>().configureEach {
+        // Kover 0.8.3 writes its agent arguments before Gradle creates this directory.
+        doFirst {
+            temporaryDir.mkdirs()
+        }
+    }
+
     wrapper {
         gradleVersion = providers.gradleProperty("gradleVersion").get()
     }

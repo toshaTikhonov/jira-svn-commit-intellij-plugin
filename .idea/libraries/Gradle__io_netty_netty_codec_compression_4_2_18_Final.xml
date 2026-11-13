@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.netty:netty-codec-compression:4.2.18.Final" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-compression/4.2.18.Final/f6f9e4372da33ca4f96b7af528ec8c26932f9fde/netty-codec-compression-4.2.18.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-compression/4.2.18.Final/62a390fc0fbaf6f74b1318f6297e5435e81cbc04/netty-codec-compression-4.2.18.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

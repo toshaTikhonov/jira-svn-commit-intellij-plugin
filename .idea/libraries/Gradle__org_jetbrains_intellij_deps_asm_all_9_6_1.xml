@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.intellij.deps:asm-all:9.6.1" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/asm-all/9.6.1/4090f44cc6d54de074b3ab7a1a894a58163b90b7/asm-all-9.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/asm-all/9.6.1/716318447392c88b8dd189264ad10a60531df5a/asm-all-9.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
