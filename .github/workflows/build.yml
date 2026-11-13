@@ -55,6 +55,9 @@ jobs:
           java-version: 25
 
       # Setup Gradle
+      - name: Install Linux font dependencies
+        run: apt-get update && apt-get install -y libfreetype6 fontconfig fonts-dejavu-core
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
@@ -78,7 +81,7 @@ jobs:
 
       # Build plugin
       - name: Build plugin
-        run: ./gradlew buildPlugin
+        run: ./gradlew --no-daemon --max-workers=1 buildPlugin
 
       # Find the installable plugin ZIP produced by buildPlugin
       - name: Prepare Plugin Artifact
@@ -118,6 +121,9 @@ jobs:
           java-version: 25
 
       # Setup Gradle
+      - name: Install Linux font dependencies
+        run: apt-get update && apt-get install -y libfreetype6 fontconfig fonts-dejavu-core
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
@@ -125,7 +131,7 @@ jobs:
 
       # Run tests
       - name: Run Tests
-        run: ./gradlew check
+        run: ./gradlew --no-daemon --max-workers=1 check
 
       # Collect Tests Result of failed tests
       - name: Collect Tests Result
@@ -188,6 +194,9 @@ jobs:
           java-version: 25
 
       # Setup Gradle
+      - name: Install Linux font dependencies
+        run: apt-get update && apt-get install -y libfreetype6 fontconfig fonts-dejavu-core
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
@@ -202,7 +211,7 @@ jobs:
 
       # Run Verify Plugin task and IntelliJ Plugin Verifier tool
       - name: Run Plugin Verification tasks
-        run: ./gradlew verifyPlugin -Dplugin.verifier.home.dir=${{ needs.build.outputs.pluginVerifierHomeDir }}
+        run: ./gradlew --no-daemon --max-workers=1 verifyPlugin -Dplugin.verifier.home.dir=${{ needs.build.outputs.pluginVerifierHomeDir }}
 
       # Collect Plugin Verifier Result
       - name: Collect Plugin Verifier Result
